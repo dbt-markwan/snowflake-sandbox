@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "SA_MARK_WAN"."DBT_C_MWAN"."SNOWFLAKE_CONTRACT_RATES";
+    -- dbt seed --
+    
+            insert into sa_mark_wan.dbt_c_mwan.snowflake_contract_rates (effective_date, rate) values
+            (%s,%s),(%s,%s)
+        
+
+;
+  

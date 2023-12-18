@@ -1,0 +1,11 @@
+
+    
+    
+
+
+
+select part_supplier_key
+from sa_mark_wan.dbt_c_mwan.part_suppliers
+where part_supplier_key is null
+
+
