@@ -69,3 +69,6 @@ seeds:
 
 snapshots:
   +target_schema: snapshots_dev
+
+tests:
+  +store_failures: true

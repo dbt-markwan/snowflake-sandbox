@@ -1,4 +1,9 @@
-
+{{
+    config(
+        materialized= 'm13n',
+        pre_hook = '{{ create_table_with_custom_id(this, "return_id") }}'
+    )
+}}
 with fct_order_items as (
     select * from {{ ref('fct_order_items') }}
 ),
