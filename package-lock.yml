@@ -1,0 +1,23 @@
+packages:
+- package: dbt-labs/audit_helper
+  name: audit_helper
+  version: 0.9.0
+- package: dbt-labs/codegen
+  name: codegen
+  version: 0.9.0
+- package: calogica/dbt_date
+  name: dbt_date
+  version: 0.7.2
+- package: calogica/dbt_expectations
+  name: dbt_expectations
+  version: 0.8.4
+- package: dbt-labs/dbt_external_tables
+  name: dbt_external_tables
+  version: 0.8.4
+- package: dbt-labs/dbt_utils
+  name: dbt_utils
+  version: 1.1.0
+- package: elementary-data/elementary
+  name: elementary
+  version: 0.13.0
+sha1_hash: 773949541fe4d346540a9c5b58b79b2e2f7c75b2
