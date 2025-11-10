@@ -15,11 +15,19 @@ models:
         description: year of the order
       
   - name: monthly_gross_revenue
+    config:
+      contract:
+        enforced: true
     columns:
       - name: order_month
+        data_type: date
+        description: ""
         tests:
           - unique
 
+      - name: gross_revenue
+        data_type: number
+        description: ""
 exposures:
   - name: returned_orders
     type: dashboard

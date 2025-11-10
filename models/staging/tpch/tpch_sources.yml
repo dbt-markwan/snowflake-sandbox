@@ -67,6 +67,13 @@ sources:
 
       - name: lineitem
         description: main lineitem table
+        config:
+          freshness:
+            warn_after:
+              count: 2
+              period: day
+          loaded_at_query: |
+              select {{weekend_offset_loaded_at('l_commitdate')}} from {{ this }}
         columns:
           - name: l_orderkey
             description: Foreign Key to O_ORDERKEY
@@ -216,6 +223,7 @@ sources:
 
       - name: supplier
         description: main supplier table
+        
         columns:
           - name: s_suppkey
             description: SF*10,000 are populated
@@ -247,3 +255,4 @@ sources:
       freshness: # make this a warning as this is static data
         warn_after: {count: 12, period: hour}
       loaded_at_field: current_timestamp() - interval '6.3 hours'
+        
