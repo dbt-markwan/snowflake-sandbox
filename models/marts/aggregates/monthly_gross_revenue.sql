@@ -1,7 +1,7 @@
 {{
     config(
         group='finance',
-        access= 'public'
+        access='public'
     )
 }}
 

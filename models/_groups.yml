@@ -1,0 +1,11 @@
+groups:
+  - name: foundation
+    owner:
+      email: markwan@dbtlabs.com 
+      name: Mark Wan
+  - name: finance
+    owner: 
+      email: mrfinance@dbtlabs.com
+      name: Mr Finance
+
+      

@@ -18,6 +18,7 @@ models:
     config:
       contract:
         enforced: true
+
     columns:
       - name: order_month
         data_type: date
@@ -28,6 +29,8 @@ models:
       - name: gross_revenue
         data_type: number
         description: ""
+
+
 exposures:
   - name: returned_orders
     type: dashboard
